@@ -1,0 +1,11 @@
+testscripts\AdminUsersTest.class
+testscripts\ManageFooterTextTest.class
+testscripts\ManageNewsTest.class
+testscripts\LoginTest.class
+testscripts\SubCategoryTest.class
+testscripts\Base.class
+testscripts\LogoutTest.class
+generate_reports\Listeners.class
+testscripts\ManageContactTest.class
+testscripts\ManageProductTest.class
+retry\Retry.class

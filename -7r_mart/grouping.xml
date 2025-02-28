@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="generate_reports.Listeners"></listener>
+	</listeners>
+	<test thread-count="5" name="Test">
+		<parameter name="browser" value="Chrome"></parameter>
+		<groups>
+		<run>
+		<include name="Regression"></include>
+		</run>
+		</groups>
+		<classes>
+	  <!-- <class name="testscripts.AdminUsersTest"/> 
+      <class name="testscripts.ManageNewsTest"/>
+      <class name="testscripts.LoginTest"/>
+      <class name="testscripts.ManageContactsTest"/>
+      <class name="testscripts.LogoutTest"/>
+      <class name="testscripts.ManageFooterTextTest"/>
+      <class name="testscripts.ManageProductTest"/>
+      <class name="testscripts.SubCategory"/> -->
+			<class name="testscripts.ManageContactTest">
+				<methods>
+		       <include
+				name="verifyThatAdminCanEditManageContactDetails"></include>
+					<!-- <exclude
+						name="checkWhetherUpdateButtonIsEnabled"></exclude> -->
+				</methods>
+			</class>
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
