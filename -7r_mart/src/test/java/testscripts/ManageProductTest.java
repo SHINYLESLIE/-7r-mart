@@ -12,7 +12,7 @@ import utilities.ExcelUtility;
 
 public class ManageProductTest extends Base {
 
-	@Test(description="Testing Whether Admin Can Delete A Product From ManageProduct Page")
+	@Test(description = "Testing Whether Admin Can Delete A Product From ManageProduct Page")
 	public void checkThatAdminCanDeleteAProduct() throws IOException {
 		String usernamevalue = ExcelUtility.getStringData(1, 0, "Login_Page");
 		String passwordvalue = ExcelUtility.getStringData(1, 1, "Login_Page");

@@ -24,11 +24,11 @@
 
 			<!-- 
 <class name="testscripts.ManageProductTest"></class>-->
-</classes>
-</test> 
+		</classes>
+	</test>
 
-		
-		<test name="Test 2">
+
+	<test name="Test 2">
 		<classes>
 
 			<!-- 			
@@ -37,14 +37,14 @@
 <class name="testscripts.ManageContactTest"></class>
 <class name="testscripts.SubCategoryTest"></class> -->
 
-<class name="testscripts.ManageFooterTextTest">
-<methods>
-	<include name="verifyThatAdminCanEditTheDetails"></include>
-	<exclude name="checkWhetherUpdateButtonIsPresent"></exclude>
-</methods>
-</class>
+			<class name="testscripts.ManageFooterTextTest">
+				<methods>
+					<include name="verifyThatAdminCanEditTheDetails"></include>
+					<exclude name="checkWhetherUpdateButtonIsPresent"></exclude>
+				</methods>
+			</class>
 
-<!--
+			<!--
 <class name="testscripts.LoginTest"></class>
 <class name="testscripts.LogoutTest">
 <class name="testscripts.ManageProductTest"></class>

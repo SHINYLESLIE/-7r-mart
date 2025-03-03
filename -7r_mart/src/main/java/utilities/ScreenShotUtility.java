@@ -27,5 +27,4 @@ public class ScreenShotUtility {
 		FileHandler.copy(screenShot, finalDestination);
 	}
 
-
 }

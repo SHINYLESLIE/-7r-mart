@@ -1,4 +1,5 @@
 package testscripts;
+
 import java.awt.AWTException;
 import java.io.IOException;
 
@@ -12,7 +13,7 @@ import utilities.ExcelUtility;
 
 public class SubCategoryTest extends Base {
 
-	@Test(description="Testing Whether Admin Can Add A Product Successfully")
+	@Test(description = "Testing Whether Admin Can Add A Product Successfully")
 	public void verifyThatTheAdminCanAddProduct() throws IOException, AWTException {
 		String usernamevalue = ExcelUtility.getStringData(1, 0, "Login_Page");
 		String passwordvalue = ExcelUtility.getStringData(1, 1, "Login_Page");
@@ -32,7 +33,6 @@ public class SubCategoryTest extends Base {
 		subcategorypage.uploadImage();
 		subcategorypage.clickSaveButton();
 		Boolean isGreenAlertDisplayed = subcategorypage.ifGreenAlertDisplayed();
-		Assert.assertTrue(isGreenAlertDisplayed,Constant.SUBCATEGORY);
+		Assert.assertTrue(isGreenAlertDisplayed, Constant.SUBCATEGORY);
 	}
 }
-

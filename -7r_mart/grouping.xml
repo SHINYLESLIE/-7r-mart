@@ -7,12 +7,12 @@
 	<test thread-count="5" name="Test">
 		<parameter name="browser" value="Chrome"></parameter>
 		<groups>
-		<run>
-		<include name="Regression"></include>
-		</run>
+			<run>
+				<include name="Regression"></include>
+			</run>
 		</groups>
 		<classes>
-	  <!-- <class name="testscripts.AdminUsersTest"/> 
+			<!-- <class name="testscripts.AdminUsersTest"/> 
       <class name="testscripts.ManageNewsTest"/>
       <class name="testscripts.LoginTest"/>
       <class name="testscripts.ManageContactsTest"/>
@@ -22,8 +22,8 @@
       <class name="testscripts.SubCategory"/> -->
 			<class name="testscripts.ManageContactTest">
 				<methods>
-		       <include
-				name="verifyThatAdminCanEditManageContactDetails"></include>
+					<include
+						name="verifyThatAdminCanEditManageContactDetails"></include>
 					<!-- <exclude
 						name="checkWhetherUpdateButtonIsEnabled"></exclude> -->
 				</methods>

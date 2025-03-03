@@ -65,5 +65,4 @@ public class LoginPage {
 		return redalert.isDisplayed();
 	}
 
-
 }
